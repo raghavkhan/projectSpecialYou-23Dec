@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* parents of first,second and third section */
+.orderImage-text-close-container {
+  width: 502px;
+  height: 289px;
+  position: relative;
+  /* border: 2px solid red; */
+  padding: 16px;
+}
+.orderDetails-container {
+  width: 501px;
+  height: 286px;
+  /* border: 2px solid blue; */
+  padding: 16px;
+}
+.orderOkay-container {
+  width: 501px;
+  height: 88px;
+  /* border: 2px solid green; */
+  margin-top: 8px;
+}
+
+/* calendar, location, money svg icons */
+.svg {
+  height: 32px;
+  width: 32px;
+  stroke: #440e87;
+}
+
+/*  first section */
+.orderImage-text-close-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderImageText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderImage {
+  height: 180px;
+  width: 180px;
+  background: url("images/orderPlaced.png");
+  background-size: cover;
+}
+.orderClose {
+  position: absolute;
+  /* border: 1px solid black; */
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  /* transform: rotate(-45deg); */
+}
+.orderCloseButton {
+  transform: rotate(-45deg);
+  color: rgba(0, 0, 0, 0.5);
+  width: 22px;
+  height: 22px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* second section */
+.orderDetails {
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.commonDateAtValue {
+  background-color: #f9f5ff;
+  padding: 8px;
+  display: flex;
+  gap: 16px;
+  color: rgba(20, 20, 20, 0.75);
+  line-height: 162%;
+  border-radius: 8px;
+}
+h2,
+h4 {
+  color: black;
+}
+
+/* third section */
+.orderOkay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderOkay-container button {
+  width: 453px;
+  height: 56px;
+  color: white;
+  background: #e95850;
+  border-radius: 100px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}
